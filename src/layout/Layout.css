@@ -1,0 +1,35 @@
+* {
+    font-family: Andale Mono, monospace;
+}
+
+body {
+    background-color: black;
+    /* background-color: rgb(182, 167, 148); */
+    color: white;
+    margin: 20px;
+    border: 1px solid rgba(252, 252, 171, 0.514);
+}
+
+.body1 {
+    margin: 8px;
+    border: 1px solid gold;
+    padding: 20px;
+    /* background-color: rgb(221, 191, 153); */
+    /* color:black */
+}
+
+.body2{
+    margin:20px;
+    /* background-color: antiquewhite; */
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    column-gap: 100px;
+    margin-bottom: 30px;
+}

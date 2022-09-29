@@ -1,0 +1,54 @@
+/*
+ * File: c:\Users\llei\Documents\projects\others\reactjs\tmdbmovie\test1\movie_dashboard\src\layout\Menubar.css
+ * Project: c:\Users\llei\Documents\projects\others\reactjs\tmdbmovie\test1\movie_dashboard
+ * Created Date: Tuesday, September 27th 2022, 1:18:04 pm
+ * Author: Lisi Lei
+ * -----
+ * Last Modified: 
+ * Modified By: 
+ * -----
+ * Copyright (c) 2022 Lisi Lei
+ * 
+ * What does this file do?
+ * -----
+ */
+
+
+
+
+
+
+.menu-bar {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-top: 1px solid rgb(54, 54, 54);
+    border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+.menu-bar button {
+    color: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-bar button:hover{
+    color:gold;
+}
+
+.menu-bar .menu-selected {
+    color: gold;
+    border-bottom: 1px solid gold;
+}
+
+.fa-bars {
+    color: #fff;
+}

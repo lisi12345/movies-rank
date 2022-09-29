@@ -1,0 +1,50 @@
+/*
+ * File: c:\Users\llei\Documents\projects\others\reactjs\tmdbmovie\test1\movie_dashboard\src\components\MostRecent.css
+ * Project: c:\Users\llei\Documents\projects\others\reactjs\tmdbmovie\test1\movie_dashboard
+ * Created Date: Thursday, September 29th 2022, 9:18:26 am
+ * Author: Lisi Lei
+ * -----
+ * Last Modified: 
+ * Modified By: 
+ * -----
+ * Copyright (c) 2022 Lisi Lei
+ * 
+ * What does this file do?
+ * -----
+ */
+
+
+/* .movies-rank {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10vw;
+} */
+
+.movie-poster {
+    margin:20px 0px 50px 0px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+
+.movie-info p{
+    margin: 0px 0px 0px 0px !important;
+    text-align: left;
+    word-wrap: break-word;
+
+}
+.movie-info p:nth-child(2n+1) {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.movie-info p:nth-child(2n) {
+    margin: 0px 0px 10px 0px !important;
+    padding-left:20px;
+}

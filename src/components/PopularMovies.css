@@ -1,0 +1,140 @@
+/*
+ * File: c:\Users\llei\Documents\projects\others\reactjs\tmdbmovie\test1\movie_dashboard\src\components\PopularMovies.css
+ * Project: c:\Users\llei\Documents\projects\others\reactjs\tmdbmovie\test1\movie_dashboard
+ * Created Date: Wednesday, September 28th 2022, 2:02:20 pm
+ * Author: Lisi Lei
+ * -----
+ * Last Modified: 
+ * Modified By: 
+ * -----
+ * Copyright (c) 2022 Lisi Lei
+ * 
+ * What does this file do?
+ * -----
+ */
+
+
+
+
+
+
+.movies-rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px 20px 50px;
+}
+
+.movies-rank table{
+    width: 80%;
+    border-collapse: collapse;
+}
+
+/* .movies-rank table tbody tr {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.479);
+} */
+
+.movies-rank table tbody tr td {
+    /* padding: 10px 0px 10px 0px !important; */
+    width: 100%;
+    word-wrap: break-word;
+    /* border: 1px solid red; */
+}
+
+.first-rank {
+    color: gold;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.other-rank {
+    font-size: 1.5rem;
+}
+
+.movies-rank table tbody tr:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
+}
+
+
+.rank-num {
+    color: inherit;
+    display: inline-block;
+    /* transform: rotate(-10deg); */
+    font-style: italic;
+    font-size: 70%;
+    word-wrap: break-word;
+    max-width: 8vw;
+}
+
+.poster {
+    max-width: 40%;
+}
+
+.first-rank .poster img {
+    width: 350px;
+}
+
+.other-rank .poster img {
+    width: 100px;
+}
+
+.rank-text {
+    color: inherit;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 650px) {
+    .first-rank {
+        font-size: 2rem;
+    }
+
+    .first-rank .poster img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .movies-rank table tbody tr td {
+        display: inline-block;
+    }
+
+    .first-rank {
+        font-size: 1.8rem;
+    }
+
+    .first-rank .poster img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .movies-rank {
+        padding: 0px;
+    }
+
+    .first-rank {
+        font-size: 1.3rem;
+    }
+
+    .other-rank {
+        font-size: 0.8rem;
+    }
+
+    .first-rank .poster img {
+        width: 100px;
+    }
+
+    .other-rank .poster img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .first-rank .poster img {
+        width: 80px;
+    }
+}
