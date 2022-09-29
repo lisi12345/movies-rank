@@ -7,7 +7,7 @@
     margin: 0px !important;
 }
 
-.logo-section .e {
+.logo-section div {
     display: inline-block;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));

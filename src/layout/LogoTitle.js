@@ -20,7 +20,7 @@ export default function LogoTitle(props) {
     return (
         <>
             <div className="logo-section">
-                <h1><div className='e'>The</div> <div className='e'>Movies</div></h1>
+                <h1><div style={{'--i':1}}>The</div> <div style={{'--i':2}}>Movies</div></h1>
             </div>
         </>
     )
