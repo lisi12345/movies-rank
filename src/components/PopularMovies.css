@@ -24,23 +24,25 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 20px 20px 20px;
 }
 
-.movies-rank table{
+.movies-rank table {
     width: 80%;
     border-collapse: collapse;
 }
 
-/* .movies-rank table tbody tr {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.479);
-} */
 
 .movies-rank table tbody tr td {
-    /* padding: 10px 0px 10px 0px !important; */
-    width: 100%;
+    padding: 10px 0px 10px 0px !important;
+    /* to make picture td and title td same width */
+    width: 50%;
     word-wrap: break-word;
-    /* border: 1px solid red; */
+}
+
+.movies-rank table tbody tr:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
 }
 
 .first-rank {
@@ -51,11 +53,6 @@
 
 .other-rank {
     font-size: 1.5rem;
-}
-
-.movies-rank table tbody tr:hover {
-    border: 1px solid grey;
-    transform: scale(1.1);
 }
 
 
@@ -69,16 +66,21 @@
     max-width: 8vw;
 }
 
-.poster {
-    max-width: 40%;
+.ignore {
+    color: transparent;
+    /* display: none; */
+    opacity: 0;
+    width: 2px;
+    word-wrap: break-word;
 }
 
+
 .first-rank .poster img {
-    width: 350px;
+    width: 300px;
 }
 
 .other-rank .poster img {
-    width: 100px;
+    width: 150px;
 }
 
 .rank-text {
@@ -95,6 +97,11 @@
     .first-rank .poster img {
         width: 200px;
     }
+
+
+    .other-rank .poster img {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -108,6 +115,11 @@
 
     .first-rank .poster img {
         width: 150px;
+    }
+
+
+    .other-rank .poster img {
+        width: 80px;
     }
 }
 

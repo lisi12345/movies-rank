@@ -76,7 +76,7 @@ export default function MoviesRankTemplate(props) {
         } : [])
     }, [currentPage, PageSize, movies, isLoading]);
 
-    var bg=require('../images/329583.jpg')
+    var bg=require('../images/joker.webp')
     if (!isLoading) {
         style = {
             // background: "url(" + images[movies['results'][0]['title']] + ") no-repeat center center fixed",//  0 0 / contain no-repeat
