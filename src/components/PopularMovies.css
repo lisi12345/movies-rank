@@ -40,6 +40,13 @@
     word-wrap: break-word;
 }
 
+.movies-rank{
+    background-image: url('../images/joker.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .movies-rank table tbody tr:hover {
     border: 1px solid grey;
     transform: scale(1.1);

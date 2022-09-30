@@ -88,7 +88,7 @@ export default function MoviesRankTemplate(props) {
             {!isLoading > 0 ?
                 <div>
                     {'dates' in movies ? <h2>Dates from <h1 style={{ display: 'inline-block' }}>{movies['dates']['minimum']}</h1> to <h1 style={{ display: 'inline-block' }}>{movies['dates']['maximum']}</h1></h2> : <></>}
-                    <div className="movies-rank" style={style}>
+                    <div className="movies-rank">
                         <table>
                             <tbody>
                                 {currentData.map((value, index) => {

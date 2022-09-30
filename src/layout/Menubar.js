@@ -28,7 +28,7 @@ export default function Menubar() {
     const ref4 = useRef();
     const ref5 = useRef();
     const [content, setContent] = useState(<PopularMovies />)
-    const [click, setClick] = useState(false);
+
     const content_dict = {
         "most-popular": <PopularMovies />,
         "most-recent": <MostRecent />,
@@ -36,9 +36,6 @@ export default function Menubar() {
         "top-rated": <TopRated />
     }
 
-    const handleClick = () => {
-        console.log('ff')
-    }
 
     const changeMenuStyle = (ref) => {
         // add className to selected menu item
@@ -86,9 +83,6 @@ export default function Menubar() {
     return (
         <>
             <div className='menu-bar'>
-                <div className="menu-icon" onClick={handleClick}>
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                </div>
                 <button onClick={() => changeMenuStyle(ref1)} ref={ref1} id="most-popular" className='menu-selected'>Most Popular</button>
                 {/* <span>/</span> */}
                 <button onClick={() => changeMenuStyle(ref3)} ref={ref3} id="now-playing">Now Playing</button>
